@@ -12,20 +12,13 @@ import Helper_functions as hf
 import keras.losses
 
 def get_split(type_):
-    if type_ == "raw":
-        return {"raw":24*60*2}
-    elif type_ == "UNI":
+    if type_ == "UNI":
         return {"u15m_s3m":distributions_in_24h * 2,
                 "u30m_s15m":distributions_in_24h * 2,
                 "u60m_s20m":distributions_in_24h * 2}
         
 def get_split_val(type_):
-    if type_ =="raw":
-        return {"sb002":None,
-                "sb003":None,
-                "sb006":None,
-                "sb008":None}
-    elif type_ == "UNI":
+    if type_ == "UNI":
         return {"u15m_s3m":distributions_in_24h * 1,
                 "u30m_s15m":distributions_in_24h * 1,
                 "u60m_s20m":distributions_in_24h * 1}
@@ -41,7 +34,7 @@ intervals_hour = 60 / step_size
 distributions_in_24h = int(intervals_hour * 24)
 
 #df = pd.read_csv(user_id + '_ts.csv', sep=';').drop('pretty_time', axis=1)
-df = pd.read_csv("D:/Program/Eclipse/Python/MasterThesis/src/safebase UNI/"+user_id + ".csv", sep=',|;', engine="python")
+df = pd.read_csv("PATH TO FOLDER"+user_id + ".csv", sep=',|;', engine="python")
 data = df.drop('pretty_time', axis=1).values
 features = df.drop('pretty_time', axis=1).columns
 
@@ -70,10 +63,6 @@ dropout_ = 0.6   #0.6
 unit_size = 125     # 80 --> 50
 t2v_ = False
 t2v_k = 128
-
-#Create train and norm set
-#train_X, train_Y = hf.func().create_dataset(train_X, timesteps)
-#test_X, test_Y = hf.func().create_dataset(test_X, timesteps)
 
 #Build model
 model = Sequential()
