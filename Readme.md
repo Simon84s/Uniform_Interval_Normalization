@@ -1,5 +1,5 @@
 # Uniform_Interval_Normalization
-Codebase for my master thesis in Data Science LINK:
+Codebase for my master thesis in Data Science LINK: http://urn.kb.se/resolve?urn=urn:nbn:se:his:diva-19194
 
 The code is provided to as a compliment to my thesis *Uniform Interval Normalization:Data representation of sparse and noisy data sets for machine learning*.
 
