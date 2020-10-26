@@ -5,4 +5,4 @@ The code is provided to as a compliment to my thesis *Uniform Interval Normaliza
 
 It requires the files to be formated exactly like the MoodMapper data set in order to run without errors. However it should be possible to rerun the experiment and by tweaking the files be able to apply the method to other data sets. 
 
-I will update the code to be less sensitive about folder structure and to require less manual input by the user. During the thesis some creative Python code had to be taken for the project to finish within the deadline and for me to be able validate the individual steps of the algorithms. 
+I will update the code to be less sensitive about folder structure and to require less manual input by the user. During the thesis some creative Python code had to be taken for the project to finish within the deadline and for me to be able to validate the individual steps of the algorithms. 
