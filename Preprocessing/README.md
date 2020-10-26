@@ -4,7 +4,7 @@
 * Split_col.py: splits a feature into two features based on some value (e.g., calls -> incoming/outgoing)
 * Binning.py: transforms a series of data point with timestamps, into a equidistant time series.
 * norm.py: calculates and returns the normalization factor. The ouput is one file per feature and the factor is in the column titled "Max".
-* norm_bad.py: normalizes the SafeBase data set with uniform interval normalization. 
+* norm_bed.py: normalizes the SafeBase data set with uniform interval normalization. 
 * Dist_transform.py: performs the uniform interval normalizaton.
 * Merge_user: Merges the files into one time series per user. 
 
